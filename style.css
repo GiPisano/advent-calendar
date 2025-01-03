@@ -1,0 +1,49 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Livvic", serif;
+    background-color: rgb(14, 9, 75);
+    line-height: 1.6;
+}
+
+/* Container Title */
+.container {
+    margin: auto;
+    max-width: 90%;
+}
+
+.container-title {
+    background-image: url("./images/header-bg.png");
+    background-position: center top;
+    background-color: rgb(50, 59, 236);
+    /* background-size: cover; */
+    min-height: 250px;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+}
