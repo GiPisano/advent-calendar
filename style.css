@@ -33,6 +33,39 @@ body {
     padding: 20px;
 }
 
+/* day */
+
+.days-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.day {
+    font-size: 30px;
+    background-color: rgb(63, 107, 91);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(16.666% - 15px); /
+    max-width: calc(16.666% - 15px); 
+    padding: 15px;
+    box-sizing: border-box; 
+}
+
+.day:last-child{
+    width: 100%;
+}
+
+.icon{
+    width: 30px;
+}
 
 
 /* Responsive Design */
