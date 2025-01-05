@@ -20,12 +20,26 @@
 <body>
     <div class="container">
         <div class="container-title">
-            <h1>Advent Calendar 2024</h1>
+            <h1>Advent Calendar</h1>
+            <p class="title">2024</p>
+            <div class="reset-container">
+                <button id="reset-button" class="reset-btn">Reset Calendar</button>
+            </div>
         </div>
-
+        <!-- Days -->
         <div class="days-container">
 
         </div>
+
+
+        <!-- Modal -->
+        <div class="modal" id="dayModal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div id="modal-content-display"></div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Script -->
