@@ -59,6 +59,7 @@ body {
     max-width: calc(100% / 8 - 15px); 
     padding: 15px;
     box-sizing: border-box; 
+    cursor: pointer;
 }
 
 .days-container .day:last-child {

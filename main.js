@@ -41,7 +41,6 @@ source.forEach((item, index) => {
     }
 
     // Show modal content
-    const isGif = item.url && item.url.endsWith(".gif");
     modalContentDisplay.innerHTML = `
       <p><strong>Day ${index + 1}</strong></p>
       ${item.url ? `<img src="${item.url}" alt="${item.icon}" />` : ""}
