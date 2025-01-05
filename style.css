@@ -21,7 +21,6 @@ body {
     background-image: url("./images/header-bg.png");
     background-position: center top;
     background-color: rgb(50, 59, 236);
-    /* background-size: cover; */
     min-height: 250px;
     border-radius: 0 0 20px 20px;
     color: white;
@@ -53,14 +52,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(16.666% - 15px); /
-    max-width: calc(16.666% - 15px); 
+    width: calc(100% / 8 - 15px); 
+    max-width: calc(100% / 8 - 15px); 
     padding: 15px;
     box-sizing: border-box; 
 }
 
-.day:last-child{
-    width: 100%;
+.days-container .day:last-child {
+    flex-basis: 100%;
+    max-width: 100%;
+    background-color: rgb(215, 220, 242);
+    color: rgb(63, 107, 91);
+    font-weight:800;
 }
 
 .icon{
@@ -78,5 +81,14 @@ body {
 @media (min-width: 1024px) {
     .container {
         max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .day {
+       font-size: 20px;
+    }
+    .icon{
+        width: 20px;
     }
 }
